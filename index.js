@@ -5,12 +5,13 @@ function storeList() {
   window.localStorage.todoList = list.innerHTML;
 }
 function getTodos() {
-  if ((window.localStorage.todoList = list.innerHTML)) {
+  if (window.localStorage.todoList) {
     list.innerHTML = window.localStorage.todoList;
   } else {
-    list.innerHTML = `<li> Cliquez sur une toto pour le supprimer </li>`;
+    list.innerHTML = ` <li> Cliquez ici pour supprimer  </li> `;
   }
 }
+
 getTodos();
 
 //add element
